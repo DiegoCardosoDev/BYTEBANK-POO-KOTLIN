@@ -16,6 +16,7 @@ class Gerente(
 
 ), Autenticar{
 
+
     override val bonificacao: Double get() = salario * 0.2 + salario
 
 
