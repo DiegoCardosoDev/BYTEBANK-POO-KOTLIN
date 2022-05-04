@@ -3,5 +3,12 @@ package model
 interface Autenticar {
 
     val senha: Int
-    fun autentica(senha: Int): Boolean
+    open fun autentica(senha: Int): Boolean{
+        if (this.senha == senha){
+            return true
+            println("logaodo...")
+        }
+        return false
+        println("não logou")
+    }
 }

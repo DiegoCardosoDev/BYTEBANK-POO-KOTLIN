@@ -17,7 +17,14 @@ class Diretor(
 ), Autenticar{
 
     override val bonificacao: Double get() = salario * 0.3 + salario
-
+    override fun autentica(senha: Int): Boolean {
+        if (this.senha == senha){
+            return true
+            println("logaodo...")
+        }
+        return false
+        println("não logou")
+    }
 
 
     override fun toString(): String {

@@ -16,7 +16,7 @@ abstract class FuncionarioAdmin(
 
 
 
-    fun autentica(senha: Int): Boolean{
+    open fun autentica(senha: Int): Boolean{
         if (this.senha == senha){
             return true
             println("login efetuado")
