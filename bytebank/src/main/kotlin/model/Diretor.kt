@@ -1,5 +1,7 @@
 package model
 
+import model.services.Autenticar
+
 class Diretor(
     name:String,
     year:Int,
@@ -14,18 +16,17 @@ class Diretor(
     email  = email,
     salario = salario,
     senha = senha
-), Autenticar{
+), Autenticar {
 
     override val bonificacao: Double get() = salario * 0.3 + salario
     override fun autentica(senha: Int): Boolean {
+        println("logaodo...")
         if (this.senha == senha){
             return true
-            println("logaodo...")
         }
-        return false
         println("não logou")
+        return false
     }
-
 
     override fun toString(): String {
         return "name:'$name',\n idade:$year,\n " +

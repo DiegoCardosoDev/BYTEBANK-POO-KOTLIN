@@ -1,13 +1,11 @@
-package main.system
+package testes.system
 
-import model.Autenticar
-import model.FuncionarioAdmin
+import model.services.Autenticar
 
 class Application {
 
 
-
-    fun entrar(admim: Autenticar, senha: Int){
+    fun entrarNoSistema(admim: Autenticar, senha: Int){
         if (admim.autentica(senha)){
             println("logou!")
         }else{

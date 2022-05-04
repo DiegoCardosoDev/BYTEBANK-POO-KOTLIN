@@ -1,5 +1,7 @@
 package model
 
+import model.Funcionario
+
 abstract class FuncionarioAdmin(
      name: String,
      year: Int,

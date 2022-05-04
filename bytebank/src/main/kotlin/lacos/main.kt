@@ -14,15 +14,15 @@ fun main() {
     println("numero conta: $numeroConta")
     println("saldo da conta: $saldo")
 
-    /*whwn expresion*/
-//    when {
-//        saldo > 0.0 -> println("conta é positiva")
-//        saldo == 0.0 -> println("conta é neutra")
-//        else -> println("conta é negativa")
-//    }
+    /*when expresion*/
+    when {
+        saldo > 0.0 -> println("conta é positiva")
+        saldo == 0.0 -> println("conta é neutra")
+        else -> println("conta é negativa")
+    }
 
 
-    /*or*/
+    /*for*/
     fun testaSaldo(saldo: Double) {
         if (saldo > 0.0) {
             println("conta positiva")

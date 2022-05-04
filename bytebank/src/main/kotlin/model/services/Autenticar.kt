@@ -1,14 +1,14 @@
-package model
+package model.services
 
 interface Autenticar {
 
     val senha: Int
     open fun autentica(senha: Int): Boolean{
         if (this.senha == senha){
+            println("logado...")
             return true
-            println("logaodo...")
         }
-        return false
         println("não logou")
+        return false
     }
 }

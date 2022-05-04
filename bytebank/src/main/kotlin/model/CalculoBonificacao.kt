@@ -1,6 +1,6 @@
 package model
 
-class Calc {
+class CalculoBonificacao {
 
     var total:Double= 0.0
     private  set
