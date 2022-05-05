@@ -1,6 +1,11 @@
-open class Conta(val titular: String, val numeroConta: Int) {
+import model.Cliente
 
-     var saldo = 0.0
+open class Conta(
+    val titular: Cliente,
+    val numeroConta: Int
+) {
+
+    var saldo = 0.0
         set(valor: Double) {
             if (valor > 0) {
                 field = valor
@@ -40,7 +45,6 @@ open class Conta(val titular: String, val numeroConta: Int) {
         return false
 
     }
-
 
 
     override fun toString(): String {

@@ -3,7 +3,7 @@ package model
 import Conta
 
 class ContaCorrente(
-    titular: String,
+    titular: Cliente,
     numeroConta: Int
 ) : Conta(
     titular = titular,

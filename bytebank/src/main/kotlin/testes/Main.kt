@@ -1,13 +1,11 @@
 package testes
-fun  main(){
 
 
 
+fun main(){
 
-
-
+    testaContas()
 
 
 
 }
-

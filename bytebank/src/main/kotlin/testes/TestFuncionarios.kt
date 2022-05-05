@@ -1,11 +1,13 @@
 package testes
 
-import model.*
+import model.Analista
+import model.CalculoBonificacao
+import model.Diretor
+import model.Gerente
 import testes.system.Application
 
-fun main(){
+fun testFuncionarios(){
 
-    val cliente = Cliente("Rebeca", "robson.com", 3321)
     val gerente1 = Gerente("Jermaine",33,"jerman.com", 10000.0, 4451 )
     val dieretor = Diretor("Alex",37,"alex.com", 10000.0, 200.0, 5544 )
 

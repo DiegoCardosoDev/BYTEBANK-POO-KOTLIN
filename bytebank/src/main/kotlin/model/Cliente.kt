@@ -3,11 +3,25 @@ package model
 import model.services.Autenticar
 
 class Cliente(
-     name: String,
-     email: String,
-     override val senha: Int
+     var name: String,
+     val cpf: String,
+     val endereco: Endereco,
+     override var senha: Int
 ): Autenticar {
+
+
      override fun autentica(senha: Int): Boolean {
-          TODO("Not yet implemented")
+          println("logaodo...")
+          if (this.senha == senha){
+               return true
+          }
+          println("não logou")
+          return false
      }
+
+     override fun toString(): String {
+          return "Cliente(senha=$name)"
+     }
+
 }
+
