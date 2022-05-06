@@ -47,5 +47,7 @@ fun  testaContas(){
     println(cp.saldo)
     println("saldo poupanca ${cp.saldo}")
 
+    println("contas: ${Conta.Contador.total}")
+
 }
 

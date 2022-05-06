@@ -1,11 +1,23 @@
 import model.Cliente
 
+
+
 open class Conta(
     val titular: Cliente,
     val numeroConta: Int
 ) {
 
+    /*Objects declarations*/
+   companion object Contador{
+        var total = 0
+        private set
+    }
+    init {
+        println("criando conta")
+         Contador.total++
+    }
     var saldo = 0.0
+
         set(valor: Double) {
             if (valor > 0) {
                 field = valor
@@ -15,6 +27,8 @@ open class Conta(
             }
 
         }
+
+
 
     var ativa: Boolean = true
 
