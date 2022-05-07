@@ -49,5 +49,12 @@ fun  testaContas(){
 
     println("contas: ${Conta.Contador.total}")
 
+
+    println("transfere: ${cp.transfere(100000.0, cc,4451)}")
+    cp.saca(100.0)
+    println("sacando...")
+
+    cc.transfere(10000.0, cp,1122)
+
 }
 

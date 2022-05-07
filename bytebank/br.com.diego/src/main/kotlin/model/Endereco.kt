@@ -3,7 +3,7 @@ package model
 class Endereco(
     var rua: String = "",
     var cidade: String ="",
-    var estado: String= ""
+    var estado: String? = null
 ) {
 
     override fun equals(other: Any?): Boolean {

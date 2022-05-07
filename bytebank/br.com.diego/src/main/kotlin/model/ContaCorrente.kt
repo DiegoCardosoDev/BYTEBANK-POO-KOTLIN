@@ -4,17 +4,15 @@ import Conta
 
 class ContaCorrente(
     titular: Cliente,
-    numeroConta: Int
+    numero: Int
 ) : Conta(
     titular = titular,
-    numeroConta = numeroConta
+    numeroConta= numero
 ) {
-
-
     override fun saca(valor: Double) {
-        val valorTaxa = valor + 0.1
-        if (this.saldo >= valorTaxa) {
-            this.saldo -= valorTaxa
+        val valorComTaxa = valor + 0.1
+        if (this.saldo >= valorComTaxa) {
+            this.saldo -= valorComTaxa
         }
     }
 }
