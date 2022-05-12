@@ -1,6 +1,7 @@
 package listas
 
-fun listasLivros(){
+fun main(){
+
 
     val livro1 = Books(
         titulo = "Grande Sertão: Veredas",
@@ -27,6 +28,17 @@ fun listasLivros(){
         anoPublicacao = 1865,
         editora = "Editora B"
     )
+    fun MutableList<Books>.imprimeListaComMarcadores() {
+        val listaComMarcadores = this.joinToString(separator = "\n") {
+            " - ${it.titulo} de ${it.autor}"
+        }
+        println("\n ### Lista de Livros ### \n${listaComMarcadores}")
+    }
+    val meusLivros: MutableList<Books> =
+        mutableListOf(livro1, livro2, livro3, livro4)
+
+    val pratileira = Pratileira(genero = "Literatura", livros =  meusLivros)
+    pratileira.organizarPorAutor().imprimeListaComMarcadores()
 
 
 
