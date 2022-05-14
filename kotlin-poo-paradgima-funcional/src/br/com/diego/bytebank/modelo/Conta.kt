@@ -2,8 +2,6 @@ package br.com.diego.bytebank.modelo
 
 import br.com.diego.bytebank.exception.FalhaAutenticacaoException
 import br.com.diego.bytebank.exception.SaldoInsuficienteException
-import java.lang.NumberFormatException
-import java.lang.RuntimeException
 
 abstract class Conta(
     var titular: Cliente,

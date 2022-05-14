@@ -49,5 +49,12 @@ complemento='$complemento')
         return result
     }
 
+    fun completo(): Any {
+        return """$logradouro - $cidade - $numero
+             
+            
+        """.trimIndent()
+    }
+
 
 }
